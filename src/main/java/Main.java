@@ -14,9 +14,5 @@ public class Main
       System.out.println("Failed to connect.");
     }
 
-   // System.out.println(dbHelper.getAnimalById("2"));
-
-    System.out.println(dbHelper.getAllAnimalsbyArrivaldate("2002"));
-
   }
 }

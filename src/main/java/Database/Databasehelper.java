@@ -9,7 +9,7 @@ import java.util.List;
 
 @Component
 public class Databasehelper {
-  String url = "jdbc:sqlite:C:/Users/adres/IdeaProjects/Danish_Crown_REST/src/main/java/Database/Animal.db";
+  String url = "jdbc:sqlite:src/main/java/Database/Animal.db";
 
 
 
