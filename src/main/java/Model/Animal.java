@@ -6,13 +6,24 @@ public class Animal
   private String weight;
   private String arrivalDate;
   private String status;
-
+  private String origin;
   // Constructor
-  public Animal(String animalId, String weight, String arrivalDate, String status) {
+  public Animal(String animalId, String weight, String arrivalDate, String status,String origin) {
     this.animalId = animalId;
     this.weight = weight;
     this.arrivalDate = arrivalDate;
     this.status = status;
+    this.origin = origin;
+  }
+
+  public String getOrigin()
+  {
+    return origin;
+  }
+
+  public void setOrigin(String origin)
+  {
+    this.origin = origin;
   }
 
   public String getAnimalId()
@@ -54,4 +65,16 @@ public class Animal
   {
     this.status = status;
   }
+
+  @Override
+  public String toString() {
+    return "Animal{" +
+        "animalId='" + animalId + '\'' +
+        ", weight='" + weight + '\'' +
+        ", arrivalDate='" + arrivalDate + '\'' +
+        ", status='" + status + '\'' +
+        ", origin='" + origin + '\'' +
+        '}';
+  }
+
 }

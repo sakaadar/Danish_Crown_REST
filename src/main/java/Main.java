@@ -13,5 +13,10 @@ public class Main
     } else {
       System.out.println("Failed to connect.");
     }
+
+   // System.out.println(dbHelper.getAnimalById("2"));
+
+    System.out.println(dbHelper.getAllAnimalsbyArrivaldate("2002"));
+
   }
 }
