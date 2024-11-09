@@ -1,14 +1,17 @@
 package Database;
 import Model.Animal;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class Databasehelper {
   String url = "jdbc:sqlite:C:/Users/adres/IdeaProjects/Danish_Crown_REST/src/main/java/Database/Animal.db";
 
-  private Persistence persistence;
+
 
   public Connection getConnection() {
     try {
@@ -19,6 +22,7 @@ public class Databasehelper {
       return null;
     }
   }
+
 
   public Animal addAnimal(String animalId, String weight, String arrivalDate, String status, String origin)
   {
